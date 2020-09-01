@@ -3,6 +3,7 @@
   connection: local
   tasks:
   - shell: 'base64 /dev/urandom | head -c 100000000 > random_data.txt'
+    run_once: true
   - set_stats:
       data:
         random_data: "{{ lookup('file', 'random_data.txt') }}"
