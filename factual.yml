@@ -1,12 +1,14 @@
 ---
-- name: Collect Package Facts
-  package_facts:
-    manager: "auto"
-  tags:
-    - gather-facts
+- name: Factual
+  tasks:
+    - name: Collect Package Facts
+      package_facts:
+        manager: "auto"
+      tags:
+        - gather-facts
 
-- name: Collect All Facts
-  setup:
-    gather_subset: all
-  tags:
-    - gather-facts
+    - name: Collect All Facts
+      setup:
+        gather_subset: all
+      tags:
+        - gather-facts
