@@ -1,5 +1,6 @@
 ---
 - name: Factual
+  hosts: all
   tasks:
     - name: Collect Package Facts
       package_facts:
