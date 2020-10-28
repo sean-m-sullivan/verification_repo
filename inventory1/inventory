@@ -1,0 +1,8 @@
+host00 var1=foo
+host01 var1=foo
+host02 var1=foo
+
+[all:vars]
+var1=bar
+var2=bin
+var3=baz
