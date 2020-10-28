@@ -1,0 +1,7 @@
+test1 myvar=1
+test2 myvar=2
+test3 myvar=3
+
+[all:vars]
+foo=bar
+bin=baz
