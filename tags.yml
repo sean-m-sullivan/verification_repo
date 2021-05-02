@@ -1,0 +1,25 @@
+---
+- name: Perform basic initial Tower configuration
+  hosts: localhost
+  gather_facts: no
+  tasks:
+
+    - debug:
+        msg: "always"
+      tags:
+        - always
+
+    - debug:
+        msg: "never"
+      tags:
+        - never
+
+    - debug:
+        msg: "sometimes"
+      tags:
+        - sometimes
+
+    - debug:
+        msg: "maybe"
+      tags:
+        - maybe
